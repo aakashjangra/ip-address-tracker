@@ -7,3 +7,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Rubik';
+}
+
+.overflow-wrap-anywhere{
+  overflow-wrap: anywhere;
+}
