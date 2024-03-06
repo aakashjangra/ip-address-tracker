@@ -11,6 +11,9 @@ export default {
         "desktop-pattern": "url('/pattern-bg-desktop.png')",
         "mobile-pattern": "url('/pattern-bg-mobile.png')",
       },
+      screens: {
+        xs: "375px",
+      },
     },
   },
   plugins: [],

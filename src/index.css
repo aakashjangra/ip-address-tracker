@@ -12,3 +12,6 @@ body{
   font-family: 'Rubik';
 }
 
+.overflow-wrap-anywhere{
+  overflow-wrap: anywhere;
+}
