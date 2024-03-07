@@ -13,7 +13,7 @@ function App() {
   }
   const getData = async (input) => {
     try {
-      const URL = import.meta.env.VITE_API_URL;
+      const URL = import.meta.env.VITE_API_URL || process.env.VITE_API_URL;
       let res;
       if (isIpAddress(input)) {
         res = await axios.get(`${URL}&ipAddress=${input}`);
