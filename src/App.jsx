@@ -13,7 +13,12 @@ function App() {
   }
   const getData = async (input) => {
     try {
-      const URL = import.meta.env.VITE_API_URL || process.env.VITE_API_URL;
+      const URL = import.meta.env.VITE_API_URL? import.meta.env.VITE_API_URL : process.env.VITE_API_URL;
+
+      if(!URL){ 
+        console.log('undefined api endpoint')
+        return;
+      }
       let res;
       if (isIpAddress(input)) {
         res = await axios.get(`${URL}&ipAddress=${input}`);
