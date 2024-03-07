@@ -25,7 +25,6 @@ function App() {
       } else {
         res = await axios.get(`${URL}&domain=${input}`);
       }
-      console.log('res is - ', res, res.data);
 
       if (res.status === 200) {
         return res.data;
@@ -49,7 +48,6 @@ function App() {
   useEffect(() => {
     document.body.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        console.log('enter key pressed')
         trackIP();
       }
     });
